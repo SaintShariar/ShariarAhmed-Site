@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shariar Ahmed — Entrepreneur · Community Builder</title>
+  <meta name="description" content="Shariar Ahmed — entrepreneur crafting projects to help underprivileged families succeed. NYC &amp; Atlanta government experience. Brooklyn · Atlanta · Buffalo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/b1df2f12b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#hero" class="logo">Shar<span class="accent-i">i</span>ar<span class="dot">.</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#globe">Journey</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Projects</a></li>
+      <li><a href="blog/">About me</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://github.com/SaintShariar" target="_blank" rel="noopener" class="nav-github" aria-label="GitHub — github.com/SaintShariar">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <header id="hero" class="hero">
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-brand reveal" data-reveal>Shar<span class="accent-i">i</span>ar<span class="dot">.</span></p>
+      <h1 class="reveal" data-reveal>
+        Entrepreneur crafting projects to help underprivileged families succeed.
+      </h1>
+      <p class="hero-lede reveal" data-reveal>
+        Self-starting high-impact work across Brooklyn, Atlanta, and Buffalo — grounded in government service and built for communities that need it most.
+      </p>
+      <div class="hero-cta reveal" data-reveal>
+        <a href="#globe" class="btn btn-accent">Explore the journey</a>
+        <a href="https://github.com/SaintShariar" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+        </a>
+        <a href="my-cv.pdf" download class="btn btn-ghost">Download CV</a>
+        <a href="blog/" class="btn btn-ghost">About me</a>
+      </div>
+    </div>
+    <a href="#globe" class="scroll-hint reveal" data-reveal aria-label="Scroll to globe">
+      <span>Scroll</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </header>
+
+  <main>
+    <!-- Cinematic 3D globe — places lived -->
+    <section id="journey" class="journey" aria-labelledby="journey-heading">
+      <div class="journey-head wrap reveal" data-reveal>
+        <p class="section-label">Places lived</p>
+        <h2 id="journey-heading">A path across the map.</h2>
+        <p class="lead journey-lede">Click a city to zoom in. Drag to orbit. Scroll to scale the view.</p>
+      </div>
+
+      <div class="globe-stage" id="globe">
+        <div id="globe-container" class="globe-container" role="img" aria-label="Interactive 3D globe of places lived: Brooklyn, Atlanta, and Buffalo"></div>
+
+        <div class="globe-fallback" id="globe-fallback" hidden>
+          <p>Your browser couldn’t load the 3D globe. Explore the places below.</p>
+        </div>
+
+        <aside class="journey-panel reveal" data-reveal>
+          <p class="journey-panel-label">Focus location</p>
+          <div class="place-list" id="place-list" role="list">
+            <button type="button" class="place-btn is-active" data-place="brooklyn" role="listitem">
+              <span class="place-dot" aria-hidden="true"></span>
+              <span class="place-meta">
+                <strong>Brooklyn, NY</strong>
+                <span>Home · roots · early path</span>
+              </span>
+            </button>
+            <button type="button" class="place-btn" data-place="atlanta" role="listitem">
+              <span class="place-dot" aria-hidden="true"></span>
+              <span class="place-meta">
+                <strong>Atlanta, GA</strong>
+                <span>Police Dept · building in the South</span>
+              </span>
+            </button>
+            <button type="button" class="place-btn" data-place="buffalo" role="listitem">
+              <span class="place-dot" aria-hidden="true"></span>
+              <span class="place-meta">
+                <strong>Buffalo, NY</strong>
+                <span>University · engineering foundation</span>
+              </span>
+            </button>
+          </div>
+          <button type="button" class="btn btn-ghost btn-tour" id="globe-tour">
+            <i class="fa-solid fa-play" aria-hidden="true"></i> Auto tour
+          </button>
+          <p class="globe-hint" id="globe-status">Ready — select a city to fly in.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="wrap about-grid">
+        <div class="about-portrait reveal" data-reveal>
+          <div class="portrait-frame">
+            <img src="user.png" alt="Shariar Ahmed, casual portrait">
+            <div class="portrait-fade" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="about-copy reveal" data-reveal>
+          <p class="section-label">About</p>
+          <h2>Founder energy. Public-service backbone.</h2>
+          <p class="lead">
+            I’m an entrepreneur who self-starts high-impact projects — products and systems designed so underprivileged families can move forward with clearer tools, fairer access, and real opportunity.
+          </p>
+          <p class="about-body">
+            Years in New York City and Atlanta government taught me how to ship reliable, scalable solutions and how to build trust with the people who depend on them. I bring that same discipline to founder work: listen hard, ship thoughtfully, and stay accountable to the community.
+          </p>
+          <ul class="about-pillars">
+            <li>
+              <strong>Impact first</strong>
+              Projects aimed at families and communities often left behind.
+            </li>
+            <li>
+              <strong>Government-hardened</strong>
+              NYC DCAS, NYC Dept. of Youth, Atlanta Police Department.
+            </li>
+            <li>
+              <strong>Builder toolkit</strong>
+              Product, software, and project leadership — in service of people.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-experience">
+      <div class="wrap">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-label">Experience</p>
+          <h2>Service that shaped the work.</h2>
+          <p class="lead">A photo-first path through community, civic, and government roles — plus the education that grounded it.</p>
+        </div>
+
+        <!--
+          Experience photos (real media in project root):
+          - experience-lions.png    → Lions International (most recent)
+          - experience-rfk.jpg      → RFK / Kennedy 2024
+          - experience-braves.jpg   → Atlanta Braves Safety Dispatcher desk
+          - experience-dcas.jpg     → NYC DCAS
+          - experience-uama.jpg     → UAMA / community youth
+          - experience-badge.jpg    → Work ID badge / APD
+        -->
+        <div class="timeline">
+          <article class="timeline-item timeline-item--featured reveal" data-reveal>
+            <figure class="timeline-media timeline-media--logo timeline-media--lions">
+              <img src="experience-lions.png" alt="Lions International logo" class="timeline-logo">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Lions International</span>
+                <span class="timeline-caption-meta">Member · Humanitarian service · Present</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Present</p>
+              <h3>Member</h3>
+              <p class="timeline-org">Lions International</p>
+              <p class="timeline-place">United States</p>
+              <p>Lions International is a global volunteer network that strengthens communities through hands-on humanitarian service — best known for fighting preventable blindness and expanding vision care, while also tackling hunger, diabetes support, youth leadership, disaster relief, and local projects that help people in need.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media timeline-media--rfk">
+              <img src="experience-rfk.jpg" alt="With RFK Jr. at a Kennedy 2024 campaign event — Political Canvasser">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Robert F. Kennedy Human Rights</span>
+                <span class="timeline-caption-meta">Kennedy 2024 · Political Canvasser · Jan 2024 – Dec 2024</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Jan 2024 – Dec 2024</p>
+              <h3>Political Canvasser</h3>
+              <p class="timeline-org">Robert F. Kennedy Human Rights</p>
+              <p class="timeline-place">United States</p>
+              <p>Door-to-door voter outreach, community events, and clear conversations on health and agriculture issues — meeting campaign goals while answering questions with professionalism and care for civic participation.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media">
+              <img src="experience-uama.jpg" alt="United American Muslim Association — community and youth programs collage">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">UAMA</span>
+                <span class="timeline-caption-meta">United American Muslim Association · Community &amp; youth</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Community</p>
+              <h3>Community &amp; Youth Programs</h3>
+              <p class="timeline-org">United American Muslim Association (UAMA)</p>
+              <p class="timeline-place">Brooklyn / New York</p>
+              <p>Hands-on community work with families and young people — mentoring, events, and programs that keep opportunity close to home.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal" data-reveal>
+            <figure class="timeline-media">
+              <img src="experience-debt.jpg" alt="Debt Collective — Volunteer Event Coordinator">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Debt Collective</span>
+                <span class="timeline-caption-meta">Volunteer Event Coordinator</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Volunteer</p>
+              <h3>Volunteer Event Coordinator</h3>
+              <p class="timeline-org">Debt Collective</p>
+              <p class="timeline-place">United States</p>
+              <p>Supporting community events for a nonprofit advancing debt abolition and economic justice — coordination grounded in solidarity with people carrying unfair financial burdens.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media timeline-media--braves">
+              <img src="experience-braves.jpg" alt="Atlanta Braves Safety Dispatcher desk — multi-monitor security feeds and Braves phone" width="1200" height="900">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Atlanta Braves</span>
+                <span class="timeline-caption-meta">Safety Dispatcher · Truist Park ops center · ~2023–2024</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">~Jun 2023 – May 2024</p>
+              <h3>Safety Dispatcher</h3>
+              <p class="timeline-org">Atlanta Braves</p>
+              <p class="timeline-place">Atlanta, GA</p>
+              <p>High-stakes coordination from the safety desk — live camera grids, radio traffic, and calm communication in a packed venue environment while the city shows up for the game.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal" data-reveal>
+            <figure class="timeline-media timeline-media--video">
+              <div class="timeline-video">
+                <video
+                  class="reel-video"
+                  controls
+                  muted
+                  autoplay
+                  loop
+                  playsinline
+                  webkit-playsinline
+                  preload="auto"
+                  poster="experience-collegepark.jpg"
+                  title="City of College Park — Police Officer Recruit video"
+                >
+                  <source src="collegepark.mp4" type="video/mp4">
+                  Your browser doesn’t support embedded video.
+                  <a href="collegepark.mp4">Download the video</a>
+                </video>
+              </div>
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">City of College Park</span>
+                <span class="timeline-caption-meta">Police Officer Recruit · Video</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Recruit</p>
+              <h3>Police Officer Recruit</h3>
+              <p class="timeline-org">City of College Park, Georgia</p>
+              <p class="timeline-place">College Park, GA</p>
+              <p>Community and fundraising events with the Mayor’s Office, precinct operations, and one-on-one work with small businesses — learning how a local department serves neighbors under pressure.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media timeline-media--badge">
+              <img src="experience-badge.jpg" alt="Atlanta Police Department ID badge — Shariar Ahmed, Police Officer Recruit">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Atlanta Police Department</span>
+                <span class="timeline-caption-meta">Police Officer Recruit · 2022–2023</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">Dec 2022 – Jun 2023</p>
+              <h3>Police Officer Recruit</h3>
+              <p class="timeline-org">Atlanta Police Department</p>
+              <p class="timeline-place">Atlanta, GA</p>
+              <p>Academy and precinct experience with at-risk youth, de-escalation during protests, and firearms training — seeing institutions from the inside while staying accountable to community trust.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal" data-reveal>
+            <figure class="timeline-media">
+              <img src="experience-dcas.jpg" alt="NYC DCAS desk — NYC Council and Mayor correspondence on screen">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">NYC DCAS</span>
+                <span class="timeline-caption-meta">Administrative Coordinator · 2020–2022</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">2020–2022</p>
+              <h3>Administrative Coordinator</h3>
+              <p class="timeline-org">NYC Department of Citywide Administrative Services</p>
+              <p class="timeline-place">New York, NY</p>
+              <p>Helping the city’s administrative backbone run — scalable processes, reliable support, and relationships across teams that keep services online for millions.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media timeline-media--youth">
+              <img src="experience-youth.jpg" alt="Shariar selfie — NYC Department of Youth era">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">NYC Department of Youth</span>
+                <span class="timeline-caption-meta">2019–2020 · New York, NY</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">2019–2020</p>
+              <h3>NYC Department of Youth</h3>
+              <p class="timeline-place">New York, NY</p>
+              <p>Working closer to young people and families — early proof that technology and process only matter when they improve someone’s day-to-day life.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item timeline-item--alt reveal" data-reveal>
+            <figure class="timeline-media">
+              <img src="experience-buffalo.jpg" alt="Education — WGU, Buffalo, and Brooklyn">
+              <figcaption class="timeline-caption">
+                <span class="timeline-caption-role">Education</span>
+                <span class="timeline-caption-meta">WGU · University at Buffalo · Buffalo State</span>
+              </figcaption>
+            </figure>
+            <div class="timeline-story">
+              <p class="timeline-year">2016–Present</p>
+              <h3>Education</h3>
+              <ul class="edu-list">
+                <li><strong>2025–Present</strong> B.S. Information Technology — Western Governors University (WGU)</li>
+                <li><strong>2018–2021</strong> B.S. Electrical Engineering — University at Buffalo</li>
+                <li><strong>2016–2018</strong> B.S. Electrical Engineering — Buffalo State College</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="section">
+      <div class="wrap">
+        <div class="section-head center reveal" data-reveal>
+          <p class="section-label">How I build</p>
+          <h2>Craft in service of families.</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card reveal" data-reveal>
+            <span class="focus-num">01</span>
+            <h3>Product &amp; platforms</h3>
+            <p>Clear interfaces and resilient apps — designed so people who need help most can actually use them.</p>
+          </article>
+          <article class="focus-card reveal" data-reveal>
+            <span class="focus-num">02</span>
+            <h3>Project leadership</h3>
+            <p>From idea to shipped outcome: scoping, coordination, and accountability learned in public-sector environments.</p>
+          </article>
+          <article class="focus-card reveal" data-reveal>
+            <span class="focus-num">03</span>
+            <h3>Community systems</h3>
+            <p>Tools for access, fairness, and connection — budgeting and experiences that bring people together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section section-work">
+      <div class="wrap">
+        <div class="section-head center reveal" data-reveal>
+          <p class="section-label">Selected projects</p>
+          <h2>Building for real lives.</h2>
+        </div>
+        <div class="projects">
+          <article class="project reveal" data-reveal>
+            <div class="project-media">
+              <img src="work-2.gif" alt="IoT Coffee Project">
+            </div>
+            <div class="project-info">
+              <h3>IoT Coffee Project</h3>
+              <p>Connected hardware that turns a daily ritual into connection — technology that gathers people, not just data.</p>
+              <a href="https://github.com/SaintShariar" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <article class="project reveal" data-reveal>
+            <div class="project-media">
+              <img src="work-3.png" alt="Budget Tracker">
+            </div>
+            <div class="project-info">
+              <h3>Budget Tracker</h3>
+              <p>React finance app with solid backend storage — built to help households see clearly and plan with confidence.</p>
+              <a href="https://github.com/SaintShariar" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+          <article class="project reveal" data-reveal>
+            <div class="project-media project-media--logo">
+              <img src="work-chameleon.png" alt="Chameleon app icon">
+            </div>
+            <div class="project-info">
+              <h3>Chameleon Notes</h3>
+              <p>Privacy-focused notes app with seamless synchronization.</p>
+              <a href="https://github.com/SaintShariar" target="_blank" rel="noopener">View on GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-grid">
+        <div class="contact-copy reveal" data-reveal>
+          <p class="section-label">Contact</p>
+          <h2>Let’s build something that matters.</h2>
+          <p class="lead">Open to collaborations, partners, and ideas with real community impact.</p>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:shariar001ahmed@gmail.com">shariar001ahmed@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+14046738647">(404) 673-8647</a>
+            </li>
+          </ul>
+          <div class="socials">
+            <a href="https://github.com/SaintShariar" target="_blank" rel="noopener" class="social-link">
+              <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/shariar-ahmed/" target="_blank" rel="noopener" class="social-link social-link--text">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+            </a>
+          </div>
+          <div class="contact-actions">
+            <a href="my-cv.pdf" download class="btn btn-ghost">Download CV</a>
+            <a href="blog/" class="btn btn-ghost">About me</a>
+          </div>
+        </div>
+        <form name="submit-to-google-sheet" class="contact-form reveal" data-reveal>
+          <label class="sr-only" for="name">Name</label>
+          <input id="name" type="text" name="Name" placeholder="Your name" required>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" type="email" name="Email" placeholder="Your email" required>
+          <label class="sr-only" for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" placeholder="Your message"></textarea>
+          <button type="submit" class="btn btn-accent">Send message</button>
+          <p id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Shariar Ahmed ·
+      <a href="https://github.com/SaintShariar" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://www.linkedin.com/in/shariar-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- Three.js via jsDelivr (stable CORS + import maps in Chrome) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="globe.js?v=4"></script>
+  <script src="script.js?v=6"></script>
+</body>
+</html>

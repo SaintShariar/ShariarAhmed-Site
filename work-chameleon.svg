@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!--
+    Chameleon logo — original brand mark.
+    Inspired by flat chameleon silhouette style (crest, arched back, spiral tail, facing right)
+    but distinct via four legs, decorative swirl strokes, and naturalistic conical turret eye.
+  -->
+  <defs>
+    <linearGradient id="chameBody" x1="80" y1="96" x2="432" y2="432" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4A8"/>
+      <stop offset="0.5" stop-color="#3B9EFF"/>
+      <stop offset="1" stop-color="#2DD4A8"/>
+    </linearGradient>
+    <linearGradient id="chameSwirl" x1="160" y1="224" x2="368" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C6FFF0"/>
+      <stop offset="1" stop-color="#9AD0FF"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="96" fill="#071018"/>
+  <circle cx="256" cy="256" r="240" stroke="url(#chameBody)" stroke-width="16"/>
+
+  <!-- Silhouette body + crest + head (facing right) -->
+  <path
+    fill="url(#chameBody)"
+    d="M152 252
+      C145.6 198.4 190.4 150.4 248 140
+      C273.6 135.2 296 143.2 310.4 160
+      C320 132.8 353.6 116.8 388.8 128
+      C427.2 140.8 449.6 180.8 440 220.8
+      C433.6 246.4 414.4 265.6 388.8 273.6
+      C371.2 280 350.4 281.6 331.2 281.6
+      C342.4 294.4 347.2 310.4 342.4 326.4
+      C332.8 358.4 302.4 377.6 268.8 371.2
+      C251.2 367.2 236.8 356.8 228.8 342.4
+      C222.4 350.4 214.4 355.2 204.8 356.8
+      C193.6 344 195.2 328 204.8 316.8
+      C190.4 307.2 182.4 291.2 180.8 273.6
+      C168 275.2 156.8 270.4 148.8 260.8
+      C150.4 257.6 151.2 254.4 152 252Z"
+  />
+
+  <!-- Four stubby legs (clearly separated for trademark distinctiveness) -->
+  <path fill="url(#chameBody)" d="M188 300c-3.2 28-10.4 54.4-20 78.4-2.4 6.4 2.4 12 9.6 12h14.4c5.6 0 9.6-4.8 8.8-10.4L192 304c-1.6-1.6-3.2-3.2-4-4z"/>
+  <path fill="url(#chameBody)" d="M228 308c-2.4 28.8-7.2 56-14.4 81.6-1.6 6.4 3.2 12 9.6 12h14.4c5.6 0 9.6-4.8 8.8-10.4l-5.6-80c-4-1.6-8.8-2.4-12.8-3.2z"/>
+  <path fill="url(#chameBody)" d="M272 310c2.4 27.2 7.2 53.6 13.6 78.4 1.6 6.4 7.2 10.4 13.6 9.6h12.8c5.6 0 9.6-5.6 8-11.2l-12-76c-8 0-16-.8-24-.8z"/>
+  <path fill="url(#chameBody)" d="M316 298c6.4 24 14.4 47.2 24.8 68.8 3.2 6.4 10.4 8.8 16 5.6l10.4-4.8c5.6-2.4 7.2-9.6 4-14.4L348 300c-10.4 1.6-20.8 1.6-32-2z"/>
+
+  <!-- Spiral tail -->
+  <path
+    fill="url(#chameBody)"
+    d="M233.6 358.4
+      C219.2 380.8 228.8 412.8 257.6 422.4
+      C289.6 433.6 323.2 414.4 326.4 382.4
+      C328 361.6 312 345.6 292.8 340.8
+      C281.6 337.6 270.4 340.8 262.4 347.2
+      C268.8 336 283.2 331.2 297.6 334.4
+      C328 340.8 348.8 368 344 398.4
+      C337.6 443.2 291.2 470.4 246.4 452.8
+      C209.6 438.4 193.6 395.2 214.4 360
+      C219.2 352 227.2 353.6 233.6 358.4Z"
+  />
+
+  <!-- Trademark swirl accents -->
+  <path d="M203.2 251.2c32-12.8 68.8-4.8 92.8 17.6" stroke="url(#chameSwirl)" stroke-width="12.4" stroke-linecap="round" fill="none"/>
+  <path d="M212.8 283.2c28.8 12.8 60.8 9.6 83.2-6.4" stroke="url(#chameSwirl)" stroke-width="10.4" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M248 150.4c17.6-7.2 38.4-2.4 52.8 12" stroke="#9AD0FF" stroke-width="9.6" stroke-linecap="round" fill="none" opacity="0.65"/>
+  <path d="M270.4 374.4c19.2-1.2 33.6 12 34.8 27.2-1.2 16-15.2 27.6-29.6 26-12.4-1.2-21.2-11.2-19.6-21.2.8-8 6-13.6 14.4-14.4" stroke="url(#chameSwirl)" stroke-width="11.2" stroke-linecap="round" fill="none" opacity="0.9"/>
+
+  <!-- Naturalistic conical turret: raised body-colored dome + small centered pupil -->
+  <ellipse cx="379.2" cy="199.2" rx="34.4" ry="35.6" fill="#06141C" opacity="0.4"/>
+  <ellipse cx="379.2" cy="196.4" rx="30.4" ry="31.2" fill="url(#chameBody)"/>
+  <circle cx="379.2" cy="196.4" r="6.4" fill="#071018"/>
+  <circle cx="376.8" cy="193.6" r="1.8" fill="#A8F5DE" opacity="0.65"/>
+</svg>
