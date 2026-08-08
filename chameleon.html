@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chameleon Notes — OSRU Company</title>
+  <meta name="description" content="Chameleon Notes — privacy-focused notes app with seamless synchronization by OSRU Company." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .chame-page {
+      min-height: 100vh;
+      padding: 6.5rem 0 4rem;
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(45, 212, 168, 0.12), transparent 55%),
+        radial-gradient(800px 480px at 100% 10%, rgba(59, 158, 255, 0.1), transparent 50%),
+        #071018;
+      color: #f5f5f2;
+    }
+    .chame-page .wrap { max-width: 920px; }
+    .chame-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.25rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+      font-size: 0.9rem;
+    }
+    .chame-top a {
+      color: #2DD4A8;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .chame-top a:hover { color: #9AD0FF; }
+    .chame-hero {
+      display: grid;
+      gap: 1.5rem;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+    @media (min-width: 720px) {
+      .chame-hero {
+        grid-template-columns: 140px 1fr;
+      }
+    }
+    .chame-hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      display: block;
+    }
+    .chame-hero h1 {
+      font-family: Syne, sans-serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      letter-spacing: -0.03em;
+      margin: 0 0 0.5rem;
+    }
+    .chame-hero p {
+      color: #9b9a97;
+      margin: 0;
+      line-height: 1.6;
+      max-width: 36rem;
+    }
+    .chame-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin: 1.75rem 0 3rem;
+    }
+    .chame-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.7rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #f5f5f2;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: rgba(255,255,255,0.03);
+    }
+    .chame-links a:hover {
+      border-color: #2DD4A8;
+      color: #2DD4A8;
+    }
+    .chame-links a.primary {
+      background: #2DD4A8;
+      color: #071018;
+      border-color: #2DD4A8;
+    }
+    .chame-links a.primary:hover {
+      background: #9AD0FF;
+      border-color: #9AD0FF;
+      color: #071018;
+    }
+    .chame-section-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #2DD4A8;
+      margin: 0 0 0.75rem;
+      font-weight: 700;
+    }
+    #privacy {
+      scroll-margin-top: 5rem;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 2.5rem;
+    }
+    #privacy h2 {
+      font-family: Syne, sans-serif;
+      font-size: 1.75rem;
+      margin: 0 0 1rem;
+    }
+    #privacy > p {
+      color: #9b9a97;
+      margin: 0 0 1.25rem;
+    }
+    .privacy-frame {
+      width: 100%;
+      min-height: 80vh;
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      background: #0f1a1c;
+    }
+  </style>
+</head>
+<body>
+  <div class="chame-page">
+    <div class="wrap">
+      <nav class="chame-top" aria-label="Chameleon page">
+        <a href="index.html">← Home</a>
+        <a href="index.html#portfolio">Projects</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="https://github.com/SaintShariar/chameleon" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+
+      <header class="chame-hero">
+        <img src="work-chameleon.png" alt="Chameleon Notes app icon" width="120" height="120" />
+        <div>
+          <p class="chame-section-label">OSRU Company</p>
+          <h1>Chameleon Notes</h1>
+          <p>
+            Privacy-focused notes app with seamless synchronization.
+            A calm place for notes, links, and ideas — local-first, with optional Chameleon Sync.
+          </p>
+        </div>
+      </header>
+
+      <div class="chame-links" aria-label="Chameleon links">
+        <a class="primary" href="index.html#portfolio">View in Projects</a>
+        <a href="https://github.com/SaintShariar/chameleon" target="_blank" rel="noopener">Chameleon on GitHub</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="chameleon-privacy.html">Open privacy page</a>
+      </div>
+
+      <section id="privacy" aria-labelledby="privacy-heading">
+        <p class="chame-section-label">Legal</p>
+        <h2 id="privacy-heading">Privacy policy</h2>
+        <p>
+          Full privacy policy for Chameleon Notes. You can also open it as a standalone page:
+          <a href="chameleon-privacy.html" style="color:#2DD4A8;font-weight:600;">chameleon-privacy.html</a>
+        </p>
+        <iframe
+          class="privacy-frame"
+          src="chameleon-privacy.html"
+          title="Chameleon Notes privacy policy"
+          loading="lazy"
+        ></iframe>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

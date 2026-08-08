@@ -940,14 +940,31 @@ h2 {
   line-height: 1.55;
 }
 
-.project-info a {
+.project-info > a {
   color: var(--accent);
   font-size: 0.8rem;
   font-weight: 600;
 }
 
-.project-info a:hover { color: var(--accent-hot); }
-.project-info a i { font-size: 0.7rem; margin-left: 4px; }
+.project-info > a:hover { color: var(--accent-hot); }
+.project-info > a i { font-size: 0.7rem; margin-left: 4px; }
+
+.project-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.project-link-row a {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.project-link-row a:hover { color: var(--accent); }
 
 /* Blog listing */
 .blog-list {
