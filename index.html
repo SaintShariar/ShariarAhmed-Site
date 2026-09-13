@@ -7,8 +7,8 @@
   <meta name="description" content="Shariar Ahmed — entrepreneur crafting projects to help underprivileged families succeed. NYC &amp; Atlanta government experience. Brooklyn · Atlanta · Buffalo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Black+Ops+One&family=Caveat+Brush&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Gochi+Hand&family=Instrument+Serif:ital@0;1&family=Limelight&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=21">
   <script src="https://kit.fontawesome.com/b1df2f12b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -447,6 +447,13 @@
           <div class="contact-actions">
             <a href="my-cv.pdf" download class="btn btn-ghost">Download CV</a>
             <a href="blog/" class="btn btn-ghost">About me</a>
+            <button type="button" class="btn btn-coffee" data-coffee-open>
+              <span class="anthora anthora--mini" aria-hidden="true">
+                <span class="anthora__steam"><i></i><i></i><i></i></span>
+                <span class="anthora__art"></span>
+              </span>
+              Buy me a cup of coffee
+            </button>
           </div>
         </div>
         <form name="submit-to-google-sheet" class="contact-form reveal" data-reveal>
@@ -466,9 +473,152 @@
   <footer>
     <p>© <span id="year"></span> Shariar Ahmed ·
       <a href="https://github.com/SaintShariar" target="_blank" rel="noopener">GitHub</a> ·
-      <a href="https://www.linkedin.com/in/shariar-ahmed/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/shariar-ahmed/" target="_blank" rel="noopener">LinkedIn</a> ·
+      <button type="button" class="footer-coffee" data-coffee-open>☕ Buy me a cup of coffee</button>
     </p>
   </footer>
+
+  <!-- Sticker: NYC cup over the page -->
+  <button type="button" class="coffee-float" data-coffee-open aria-label="Buy me a cup of coffee — five dollar minimum">
+    <span class="anthora anthora--float" aria-hidden="true">
+      <span class="anthora__steam">
+        <i></i><i></i><i></i><i></i><i></i>
+      </span>
+      <svg class="anthora__svg" viewBox="0 0 140 172" role="img" aria-label="New York diner coffee cup filled with chai">
+        <defs>
+          <linearGradient id="cupBlue" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#0d4a7a"/>
+            <stop offset="18%" stop-color="#2f86c8"/>
+            <stop offset="46%" stop-color="#1f6fb3"/>
+            <stop offset="78%" stop-color="#165892"/>
+            <stop offset="100%" stop-color="#0a365c"/>
+          </linearGradient>
+          <linearGradient id="cupShade" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#000000" stop-opacity="0.18"/>
+          </linearGradient>
+          <radialGradient id="chaiFill" cx="42%" cy="38%" r="68%">
+            <stop offset="0%" stop-color="#e8c089"/>
+            <stop offset="28%" stop-color="#c89a5a"/>
+            <stop offset="62%" stop-color="#a56b35"/>
+            <stop offset="100%" stop-color="#6e401c"/>
+          </radialGradient>
+          <pattern id="greekKey" width="10" height="7" patternUnits="userSpaceOnUse">
+            <path d="M1 6 V1 H4 V5 H7 V1 H9" fill="none" stroke="#fff" stroke-width="1.15"/>
+          </pattern>
+        </defs>
+        <ellipse cx="70" cy="156" rx="36" ry="7" fill="rgba(0,0,0,0.22)"/>
+        <path d="M28 42 L40 154 Q70 166 100 154 L112 42 Z" fill="url(#cupBlue)"/>
+        <path d="M28 42 L40 154 Q70 166 100 154 L112 42 Z" fill="url(#cupShade)"/>
+        <rect x="32" y="50" width="76" height="7" fill="url(#greekKey)" opacity="0.95"/>
+        <rect x="38" y="136" width="64" height="7" fill="url(#greekKey)" opacity="0.95"/>
+        <path d="M42 62 H98 Q104 78 98 118 H42 Q36 78 42 62 Z" fill="#f7f4ee"/>
+        <text x="70" y="82" text-anchor="middle" fill="#e38a1d" font-family="Georgia, 'Times New Roman', serif" font-size="8.2" font-weight="700" letter-spacing="0.4">BUY ME A</text>
+        <text x="70" y="94" text-anchor="middle" fill="#e38a1d" font-family="Georgia, 'Times New Roman', serif" font-size="8.2" font-weight="700" letter-spacing="0.2">CUP OF COFFEE</text>
+        <g fill="#e38a1d">
+          <path d="M50 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+          <path d="M64 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+          <path d="M78 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+        </g>
+        <ellipse cx="70" cy="34" rx="52" ry="16" fill="#f4f1ea"/>
+        <ellipse class="chai-liquid" cx="70" cy="34" rx="46" ry="13.6" fill="url(#chaiFill)"/>
+        <ellipse cx="70" cy="34" rx="46" ry="13.6" fill="none" stroke="#d9b27a" stroke-width="1.2"/>
+        <ellipse class="chai-foam" cx="58" cy="31" rx="11" ry="3.2" fill="rgba(255,236,210,0.35)"/>
+        <ellipse class="chai-foam" cx="80" cy="33" rx="6" ry="2" fill="rgba(255,255,255,0.22)"/>
+      </svg>
+    </span>
+    <span class="coffee-float__text">
+      <span class="coffee-float__main">Buy me a cup of coffee :)</span>
+    </span>
+  </button>
+
+  <div id="coffee-modal" class="coffee-modal" hidden role="dialog" aria-modal="true" aria-labelledby="coffee-modal-title">
+    <div class="coffee-modal__backdrop" data-coffee-close aria-hidden="true"></div>
+    <div class="coffee-modal__dialog">
+      <span class="coffee-modal__halftone" aria-hidden="true"></span>
+      <button type="button" class="coffee-modal__close" data-coffee-close aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <header class="coffee-modal__head">
+        <span class="coffee-modal__icon" aria-hidden="true">
+          <span class="anthora anthora--modal">
+            <span class="anthora__steam">
+              <i></i><i></i><i></i><i></i><i></i>
+            </span>
+            <svg class="anthora__svg" viewBox="0 0 140 172">
+              <defs>
+                <linearGradient id="cupBlueM" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#0d4a7a"/>
+                  <stop offset="18%" stop-color="#2f86c8"/>
+                  <stop offset="46%" stop-color="#1f6fb3"/>
+                  <stop offset="78%" stop-color="#165892"/>
+                  <stop offset="100%" stop-color="#0a365c"/>
+                </linearGradient>
+                <linearGradient id="cupShadeM" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+                  <stop offset="100%" stop-color="#000000" stop-opacity="0.18"/>
+                </linearGradient>
+                <radialGradient id="chaiFillM" cx="42%" cy="38%" r="68%">
+                  <stop offset="0%" stop-color="#e8c089"/>
+                  <stop offset="28%" stop-color="#c89a5a"/>
+                  <stop offset="62%" stop-color="#a56b35"/>
+                  <stop offset="100%" stop-color="#6e401c"/>
+                </radialGradient>
+                <pattern id="greekKeyM" width="10" height="7" patternUnits="userSpaceOnUse">
+                  <path d="M1 6 V1 H4 V5 H7 V1 H9" fill="none" stroke="#fff" stroke-width="1.15"/>
+                </pattern>
+              </defs>
+              <ellipse cx="70" cy="156" rx="36" ry="7" fill="rgba(0,0,0,0.22)"/>
+              <path d="M28 42 L40 154 Q70 166 100 154 L112 42 Z" fill="url(#cupBlueM)"/>
+              <path d="M28 42 L40 154 Q70 166 100 154 L112 42 Z" fill="url(#cupShadeM)"/>
+              <rect x="32" y="50" width="76" height="7" fill="url(#greekKeyM)" opacity="0.95"/>
+              <rect x="38" y="136" width="64" height="7" fill="url(#greekKeyM)" opacity="0.95"/>
+              <path d="M42 62 H98 Q104 78 98 118 H42 Q36 78 42 62 Z" fill="#f7f4ee"/>
+              <text x="70" y="82" text-anchor="middle" fill="#e38a1d" font-family="Georgia, 'Times New Roman', serif" font-size="8.2" font-weight="700" letter-spacing="0.4">BUY ME A</text>
+              <text x="70" y="94" text-anchor="middle" fill="#e38a1d" font-family="Georgia, 'Times New Roman', serif" font-size="8.2" font-weight="700" letter-spacing="0.2">CUP OF COFFEE</text>
+              <g fill="#e38a1d">
+                <path d="M50 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+                <path d="M64 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+                <path d="M78 108 h10 a2 2 0 0 1 2 2 v3 a5 5 0 0 1-5 5 h-2 a5 5 0 0 1-5-5 v-3 a2 2 0 0 1 2-2z"/>
+              </g>
+              <ellipse cx="70" cy="34" rx="52" ry="16" fill="#f4f1ea"/>
+              <ellipse class="chai-liquid" cx="70" cy="34" rx="46" ry="13.6" fill="url(#chaiFillM)"/>
+              <ellipse cx="70" cy="34" rx="46" ry="13.6" fill="none" stroke="#d9b27a" stroke-width="1.2"/>
+              <ellipse class="chai-foam" cx="58" cy="31" rx="11" ry="3.2" fill="rgba(255,236,210,0.35)"/>
+              <ellipse class="chai-foam" cx="80" cy="33" rx="6" ry="2" fill="rgba(255,255,255,0.22)"/>
+            </svg>
+          </span>
+        </span>
+        <h2 id="coffee-modal-title">Buy me a cup of coffee</h2>
+      </header>
+
+      <div class="coffee-amount">
+        <label for="coffee-amount">Your amount (USD)</label>
+        <div class="coffee-amount__row">
+          <span class="coffee-amount__prefix">$</span>
+          <input id="coffee-amount" type="number" min="5" step="1" value="10" inputmode="decimal" autocomplete="off">
+        </div>
+        <p id="coffee-amount-error" class="coffee-amount__error" role="alert"></p>
+        <div class="coffee-chips" role="group" aria-label="Quick amounts">
+          <button type="button" class="coffee-chip" data-coffee-chip="5">$5</button>
+          <button type="button" class="coffee-chip is-active" data-coffee-chip="10">$10</button>
+          <button type="button" class="coffee-chip" data-coffee-chip="15">$15</button>
+          <button type="button" class="coffee-chip" data-coffee-chip="25">$25</button>
+          <button type="button" class="coffee-chip" data-coffee-chip="50">$50</button>
+        </div>
+      </div>
+
+      <div class="coffee-panels">
+        <div class="coffee-panel is-active" data-coffee-panel="stripe">
+          <button type="button" id="coffee-stripe-btn" class="btn btn-coffee-stripe">
+            <i class="fa-brands fa-stripe" aria-hidden="true"></i> Pay with Stripe
+          </button>
+        </div>
+      </div>
+
+      <p id="coffee-pay-status" class="coffee-status" role="status"></p>
+    </div>
+  </div>
 
   <!-- Three.js via jsDelivr (stable CORS + import maps in Chrome) -->
   <script type="importmap">
@@ -480,6 +630,8 @@
   }
   </script>
   <script type="module" src="globe.js?v=4"></script>
-  <script src="script.js?v=6"></script>
+  <script src="coffee-config.js?v=8"></script>
+  <script src="coffee.js?v=9"></script>
+  <script src="script.js?v=13"></script>
 </body>
 </html>

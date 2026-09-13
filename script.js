@@ -126,4 +126,23 @@
   /* ---- Year ---- */
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
+
+  /* ---- Coffee thank-you return from Stripe ---- */
+  try {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('coffee') === 'thanks') {
+      var toast = document.createElement('p');
+      toast.className = 'coffee-thanks-toast';
+      toast.textContent = 'Thanks for the coffee — you’re the best!';
+      document.body.appendChild(toast);
+      requestAnimationFrame(function () { toast.classList.add('is-visible'); });
+      setTimeout(function () {
+        toast.classList.remove('is-visible');
+        setTimeout(function () { toast.remove(); }, 400);
+      }, 4200);
+      if (window.history && window.history.replaceState) {
+        window.history.replaceState({}, '', window.location.pathname + window.location.hash);
+      }
+    }
+  } catch (_e) { /* ignore */ }
 })();
